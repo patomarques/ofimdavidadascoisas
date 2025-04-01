@@ -1,0 +1,9 @@
+.btn-green {
+    background-color: $c-green-lodo !important;
+    color: $c-white !important;
+    font-weight: bold !important;
+
+    &:hover {
+        opacity: .7;
+    }
+}

@@ -1,0 +1,48 @@
+$c-white: #ffffff;
+
+$c-black: #000000;
+$c-pink: rgb(224, 195, 191);
+$c-yellow: rgb(232, 224, 191);
+$c-green: #C7E2BF;
+$c-green-lodo: #63715F;
+$c-blue: rgb(199, 226, 191);
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-beige: #fffbed;
+$color-green: #cde5c5;
+$color-yellow: #eae3c5;
+$color-red: #e3c9c5;
+$color-blue: #c5e7e4;
+
+.bg-black {
+    background-color: $color-black;
+}
+
+.bg-white {
+    background-color: $color-white;
+}
+
+.bg-beige {
+    background-color: $color-beige !important;
+}
+
+.bg-green {
+    background-color: $color-green;
+}
+
+.bg-yellow {
+    background-color: $color-yellow;
+}
+
+.bg-red {
+    background-color: $color-red;
+}
+
+.bg-blue {
+    background-color: $color-blue;
+}
+
+.color-black {
+    color: $color-black !important;
+} 
