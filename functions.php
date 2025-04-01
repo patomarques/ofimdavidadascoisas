@@ -179,6 +179,24 @@ function create_post_types_custom()
 
 		)
 	);
+
+	register_post_type(
+		'textos-editaveis',
+		// CPT Options
+		array(
+			'labels' => array(
+				'name' => __('Textos Editáveis'),
+				'singular_name' => __('Texto Editável')
+			),
+			'menu_icon' => 'dashicons-welcome-write-blog',
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array('slug' => 'textos-editaveis'),
+			'show_in_rest' => true,
+			'supports' => array('title', 'editor', 'excerpt', 'author', 'thumbnail', 'revisions', 'custom-fields'),
+
+		)
+	);
 }
 add_action('init', 'create_post_types_custom');
 
