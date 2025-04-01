@@ -69,8 +69,12 @@ endwhile;
 						<h3 class="title-footer bold pb-3">Contato</h3>
 						<a href="mailto:<?= $footerInfos['email'] ?>" class="d-block h4 link bold color-black h5">
 							<?= $footerInfos['email'] ?></a>
-						<a class="d-block h5 bold color-black" href="call:+5581988869961"><?= $footerInfos['telefone_1'] ?></a>
-						<a class="d-block h5 bold color-black" href="call:+5581988869961"><?= $footerInfos['telefone_2'] ?></a>
+						<a class="d-block h5 bold color-black" href="tel:<?= $footerInfos['telefone_1'] ?>">
+							<?= $footerInfos['telefone_1'] ?>
+						</a>
+						<a class="d-block h5 bold color-black" href="tel:<?= $footerInfos['telefone_1'] ?>">
+							<?= $footerInfos['telefone_2'] ?>
+						</a>
 					</div>
 					<div class="col-12 col-md-5">
 						<h3 class="title-footer bold">Estamos no instagram</h3>
