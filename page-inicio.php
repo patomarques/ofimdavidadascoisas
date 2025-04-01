@@ -9,10 +9,8 @@
 <section class="container-fluid bg-yellow pt-5 pb-5">
     <div class="container pt-4 pb-4">
         <div class="row">
-            <h2 class="display-2 bold pb-4">Um museu virtual de objetos e
-                histórias de gente pernambucana</h2>
-
-            <p class="h2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            <h2 class="display-2 bold pb-4"><?= get_post_custom_values('home_text_intro_title')[0] ?></h2>
+            <p class="h2"><?= get_post_custom_values('home_text_intro_subtitle')[0] ?></p>
 
             <a href="<?php echo get_site_url() . '/sobre' ?>" class="link">>>> Saiba mais.</a>
         </div>
