@@ -15,17 +15,17 @@ $places = new WP_Query(
         </div>
     </div>
     <div class="row pt-5">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-lg-3">
             <h2 class="title-section bold">Lugares</h2>
         </div>
-        <div class="col-12 col-md-8 pt-2">
-            <div class="pull-right">
+        <div class="col-12 col-lg-9">
+            <div class="d-flex justify-content-end pt-2">
                 <?php while ($places->have_posts()):
                     $places->the_post(); ?>
 
                     <a href="<?php echo get_the_permalink(); ?>"
-                        class="btn btn-default bold h1">
-                        <?php echo get_the_title(); ?>
+                        class="btn btn-default bold">
+                        <span class="h5 bold"><?php echo get_the_title(); ?></span>
                     </a>
 
                 <?php endwhile; ?>
