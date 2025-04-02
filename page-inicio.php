@@ -7,12 +7,12 @@
 </div>
 
 <section class="container-fluid bg-yellow pt-5 pb-5">
-    <div class="container pt-4 pb-4">
+    <div class="container pt-5 pb-4">
         <div class="row">
             <h2 class="display-2 bold pb-4"><?= get_post_custom_values('home_text_intro_title')[0] ?></h2>
-            <p class="h2"><?= get_post_custom_values('home_text_intro_subtitle')[0] ?></p>
+            <p class="fw-light fs-2"><?= get_post_custom_values('home_text_intro_subtitle')[0] ?></p>
 
-            <a href="<?php echo get_site_url() . '/sobre' ?>" class="link">>>> Saiba mais.</a>
+            <a href="<?php echo get_site_url() . '/sobre' ?>" class="fs-2 fw-normal color-black">>>> Saiba mais.</a>
         </div>
     </div>
 
@@ -68,11 +68,11 @@ $objects = new WP_Query(
         </div>
         <div class="row pt-5">
             <div class="col-12 col-lg-6 text-left">
-                <h2 class="title-section bold">Objetos</h2>
+                <h2 class="title-section fw-bold">Objetos</h2>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="d-flex justify-content-end pt-1">
-                    <a href="<?= get_site_url() . '/objetos' ?>" class="h4 mt-3">>>> Saiba mais.</a>
+                    <a href="<?= get_site_url() . '/objetos' ?>" class="h4 mt-3 fw-normal">>>> Saiba mais.</a>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@ $peoples = new WP_Query(
     <div class="container pb-5">
         <div class="row mt-5">
             <div class="col-12 col-lg-6">
-                <h2 class="title-section bold">Pessoas</h2>
+                <h2 class="title-section fw-bold">Pessoas</h2>
             </div>
             <div class="col-12 col-lg-6">
                 <div class="d-flex justify-content-end">
