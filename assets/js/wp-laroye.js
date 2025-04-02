@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
   $.noConflict();
-  console.log("jQuery is still working!", $);
+  //console.log("jQuery is still working!", $);
 
   $(".slick-js").slick({
     dots: false,
