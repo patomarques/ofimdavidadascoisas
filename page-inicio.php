@@ -55,7 +55,7 @@ $objects = new WP_Query(
         </div>
         <div class="row">
 
-            <div class="multiple-items">
+            <div class="multiple-items js-slider">
                 <?php while ($objects->have_posts()):
                     $objects->the_post(); ?>
 

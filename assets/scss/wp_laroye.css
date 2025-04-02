@@ -12322,6 +12322,10 @@ body.admin-bar #mobile-menu .menu-main-search {
   display: none !important;
 }
 
+.multiple-items .slick-slide img {
+  padding: 30px;
+}
+
 #site-copyright, .footer-inside {
   color: #000000;
 }

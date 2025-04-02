@@ -29,7 +29,7 @@ p {
 
 .italic {
   font-style: italic;
-} 
+}
 
 #container {
   // /max-width: calc( 1300px - 4em ) !important;
@@ -311,4 +311,12 @@ body.admin-bar #mobile-menu .menu-main-search {
 
 .navigation {
   display: none !important;
+}
+
+.multiple-items {
+  .slick-slide {
+    img {
+      padding: 30px;
+    }
+  }
 }
