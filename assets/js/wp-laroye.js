@@ -69,4 +69,12 @@ jQuery(document).ready(function ($) {
   $(window).on("orientationchange", function () {
     $(".js-slider").not(".slick-initialized").slick("resize");
   });
+
+  $('#mobile-menu .menu-item-has-children a').on('click', function(){
+    if($(this).closest('li').hasClass('menu-item-has-children')){
+      $(this).attr('href', '#');
+      $(this).parent('li').find('.dropdown-toggle').click();
+      return;
+    }
+  });
 });

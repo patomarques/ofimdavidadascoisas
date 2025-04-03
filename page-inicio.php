@@ -36,21 +36,19 @@ $objects = new WP_Query(
             </div>
             <div class="col-12 col-lg-6">
 
-                <ul class="nav justify-content-end p-3">
-                    <li class="nav-item ps-4">
-                        <a href="<?= get_site_url() . '/objetos' ?>" class="bold h4">Objetos</a>
+                <ul class="nav justify-content-end p-3 nav-acervo">
+                    <li class="nav-item ps-4 nav-acervo__item">
+                        <a href="<?= get_site_url() . '/objetos' ?>" class="nav-acervo__item__link">Objetos</a>
                     </li>
                     <li class="nav-item ps-4">
-                        <a href="<?= get_site_url() . '/pessoas' ?>" class="bold h4">Pessoas</a>
+                        <a href="<?= get_site_url() . '/pessoas' ?>" class="nav-acervo__item__link">Pessoas</a>
 
                     </li>
                     <li class="nav-item ps-4">
-                        <a href="<?= get_site_url() . '/lugares' ?>" class="bold h4">Lugares</a>
+                        <a href="<?= get_site_url() . '/lugares' ?>" class="nav-acervo__item__link">Lugares</a>
 
                     </li>
                 </ul>
-
-                I
             </div>
         </div>
         <div class="row">
@@ -63,6 +61,7 @@ $objects = new WP_Query(
                         <img src="<?= get_the_post_thumbnail_url(get_the_ID()) ?>"
                             title="<?php echo get_the_title(); ?>" alt="<?php echo get_the_title(); ?>" class="img-responsive">
                     </div>
+
                 <?php endwhile; ?>
             </div>
         </div>

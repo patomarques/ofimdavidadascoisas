@@ -1,8 +1,32 @@
-#site-copyright, .footer-inside {
-    color: $color-black;
+#site-copyright,
+.footer-inside {
+  color: $color-black;
 
-    .link {
-        color: $c-yellow;
-        font-weight: bold;
-    }
+  .link {
+    color: $c-yellow;
+    font-weight: bold;
+  }
+}
+
+@include media-breakpoint-up(xs) {
+  .footer-logo {
+    display: flex;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}
+
+@include media-breakpoint-up(xxl) {
 }

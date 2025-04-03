@@ -20,15 +20,19 @@ $places = new WP_Query(
         </div>
         <div class="col-12 col-lg-9">
             <div class="d-flex justify-content-end pt-2">
-                <?php while ($places->have_posts()):
-                    $places->the_post(); ?>
+                <div class="d-grid gap-2 w100vw map-places__buttons">
 
-                    <a href="<?php echo get_the_permalink(); ?>"
-                        class="btn btn-default bold">
-                        <span class="h5 bold"><?php echo get_the_title(); ?></span>
-                    </a>
+                    <?php while ($places->have_posts()):
+                        $places->the_post(); ?>
 
-                <?php endwhile; ?>
+                        <a href="<?php echo get_the_permalink(); ?>"
+                            class="btn btn-default bold">
+                            <span class="h5 bold"><?php echo get_the_title(); ?></span>
+                        </a>
+
+                    <?php endwhile; ?>
+                </div>
+
             </div>
 
         </div>

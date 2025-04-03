@@ -12063,10 +12063,6 @@ textarea.form-control-lg {
   padding: 0 24px;
 }
 
-.sub-menu a {
-  background-color: #ffffff !important;
-}
-
 .header-image {
   opacity: 0 !important;
 }
@@ -12080,8 +12076,8 @@ textarea.form-control-lg {
 }
 
 .menu-item-has-children {
-  cursor: default;
-  text-decoration: none;
+  cursor: default !important;
+  text-decoration: none !important;
 }
 
 @media (min-width: 576px) {
@@ -12092,9 +12088,65 @@ textarea.form-control-lg {
     display: none;
   }
 }
+nav#mobile-menu {
+  padding-top: 0 !important;
+}
+
+nav#mobile-menu #mobile-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+nav#mobile-menu #mobile-nav a span {
+  font-size: 2em;
+  font-family: "Goldplay", serif !important;
+}
+
+.toggled-on {
+  color: #000000;
+  border-bottom: none !important;
+}
+
+.menu-item-has-children a {
+  text-decoration: none !important;
+}
+.menu-item-has-children a:hover {
+  color: #ffffff;
+}
+.menu-item-has-children .sub-menu {
+  margin-bottom: 16px;
+  text-align: left;
+  padding-left: 20%;
+}
+.menu-item-has-children .sub-menu a span {
+  font-size: 1.6em !important;
+}
+.menu-item-has-children .sub-menu li {
+  margin-bottom: 12px !important;
+  margin-left: 30px;
+}
+
+.burgermenu-active .dropdown-toggle:after {
+  content: "" !important;
+  font-size: 2em;
+  margin: 16px 40px;
+}
+
+.searchform {
+  display: none !important;
+}
+
+@media (min-width: 576px) {
+  nav#mobile-menu #mobile-nav a {
+    font-size: 1.4em;
+    font-family: "Goldplay", serif !important;
+  }
+}
 @media (min-width: 1200px) {
   #top-nav {
     display: block;
+  }
+  .sub-menu a {
+    background-color: #ffffff !important;
   }
 }
 body {
@@ -12326,10 +12378,39 @@ body.admin-bar #mobile-menu .menu-main-search {
   padding: 30px;
 }
 
-#site-copyright, .footer-inside {
+input[name=s] {
+  padding-left: 60px !important;
+  border-bottom: none !important;
+}
+
+.nav-acervo__item__link {
+  font-size: 1.2em;
+  color: #000000;
+  font-weight: 700;
+}
+
+.title-section {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.map-places__buttons .btn {
+  margin-left: 0 !important;
+}
+
+#site-copyright,
+.footer-inside {
   color: #000000;
 }
-#site-copyright .link, .footer-inside .link {
+#site-copyright .link,
+.footer-inside .link {
   color: rgb(232, 224, 191);
   font-weight: bold;
+}
+
+.footer-logo {
+  display: flex;
+  margin: auto;
+  padding-bottom: 50px;
 }/*# sourceMappingURL=wp_laroye.css.map */

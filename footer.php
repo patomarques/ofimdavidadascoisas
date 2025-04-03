@@ -61,7 +61,7 @@ endwhile;
 	<div class="container pt-5 ">
 		<div class="row">
 			<div class="col-12 col-md-5">
-				<img src="<?= $footerInfos['logo_footer'] ?>" alt="Logo - O fim da vida das coisas" title="Logo - O fim da vida das coisas" class="img-responsive">
+				<img src="<?= $footerInfos['logo_footer'] ?>" alt="Logo - O fim da vida das coisas" title="Logo - O fim da vida das coisas" class="img-responsive footer-logo">
 			</div>
 			<div class="col-12 col-md-7">
 				<div class="row">
@@ -107,7 +107,7 @@ endwhile;
 	<?php cryout_master_topfooter_hook(); ?>
 	<div id="footer-top">
 		<div class="footer-inside">
-			<a href="<?php echo get_site_url(); ?>" class="color-black h6 italic">
+			<a href="<?php echo get_site_url(); ?>" class="color-black fst-italic fw-light">
 				<?php echo get_bloginfo(); ?> &#169; <?= date('Y') ?>
 			</a>
 		</div>
