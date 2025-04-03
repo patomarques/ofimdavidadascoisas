@@ -60,10 +60,10 @@ endwhile;
 <section class="container-fluid bg-beige fluid pt-5 pb-5">
 	<div class="container pt-5 ">
 		<div class="row">
-			<div class="col-12 col-md-5">
+			<div class="col-12 col-xl-5">
 				<img src="<?= $footerInfos['logo_footer'] ?>" alt="Logo - O fim da vida das coisas" title="Logo - O fim da vida das coisas" class="img-responsive footer-logo">
 			</div>
-			<div class="col-12 col-md-7">
+			<div class="col-12 col-xl-7">
 				<div class="row">
 					<div class="col-12 col-md-7">
 						<h3 class="title-footer bold pb-3">Contato</h3>

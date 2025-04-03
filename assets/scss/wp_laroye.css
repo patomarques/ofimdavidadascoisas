@@ -12030,6 +12030,11 @@ textarea.form-control-lg {
   font-size: 3rem;
 }
 
+@media (min-width: 992px) {
+  .title-section {
+    font-size: 3.5rem;
+  }
+}
 .btn-green {
   background-color: #63715F !important;
   color: #ffffff !important;
@@ -12384,14 +12389,14 @@ input[name=s] {
 }
 
 .nav-acervo__item__link {
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #000000;
-  font-weight: 700;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 30px;
 }
 
 .title-section {
-  margin: auto;
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -12399,6 +12404,27 @@ input[name=s] {
   margin-left: 0 !important;
 }
 
+.text-see-more {
+  font-size: 1.2em;
+}
+
+.nav-acervo {
+  padding-top: 16px;
+}
+
+@media (min-width: 992px) {
+  .map-places__buttons {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-acervo {
+    padding-top: 26px;
+  }
+  .text-see-more {
+    font-size: 2em;
+  }
+}
 #site-copyright,
 .footer-inside {
   color: #000000;
@@ -12413,4 +12439,11 @@ input[name=s] {
   display: flex;
   margin: auto;
   padding-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+  .footer-logo {
+    display: block;
+    text-align: left;
+  }
 }/*# sourceMappingURL=wp_laroye.css.map */

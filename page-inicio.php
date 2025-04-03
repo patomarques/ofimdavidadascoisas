@@ -31,20 +31,20 @@ $objects = new WP_Query(
 <section class="container-fluid bg-red pt-5 pb-5">
     <div class="container">
         <div class="row mb-3">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-md-4 col-lg-6">
                 <h2 class="title-section bold">Acervo</h2>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
 
-                <ul class="nav justify-content-end p-3 nav-acervo">
-                    <li class="nav-item ps-4 nav-acervo__item">
+                <ul class="nav justify-content-end nav-acervo">
+                    <li class="nav-item nav-acervo__item">
                         <a href="<?= get_site_url() . '/objetos' ?>" class="nav-acervo__item__link">Objetos</a>
                     </li>
-                    <li class="nav-item ps-4">
+                    <li class="nav-item">
                         <a href="<?= get_site_url() . '/pessoas' ?>" class="nav-acervo__item__link">Pessoas</a>
 
                     </li>
-                    <li class="nav-item ps-4">
+                    <li class="nav-item">
                         <a href="<?= get_site_url() . '/lugares' ?>" class="nav-acervo__item__link">Lugares</a>
 
                     </li>
@@ -66,12 +66,12 @@ $objects = new WP_Query(
             </div>
         </div>
         <div class="row pt-5">
-            <div class="col-12 col-lg-6 text-left">
+            <div class="col-6 text-left">
                 <h2 class="title-section fw-bold">Objetos</h2>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-6">
                 <div class="d-flex justify-content-end pt-1">
-                    <a href="<?= get_site_url() . '/objetos' ?>" class="h4 mt-3 fw-normal">>>> Saiba mais.</a>
+                    <a href="<?= get_site_url() . '/objetos' ?>" class="h4 mt-3 fw-normal text-see-more">>>> Saiba mais.</a>
                 </div>
             </div>
         </div>
@@ -106,12 +106,12 @@ $peoples = new WP_Query(
 
     <div class="container pb-5">
         <div class="row mt-5">
-            <div class="col-12 col-lg-6">
+            <div class="col-6">
                 <h2 class="title-section fw-bold">Pessoas</h2>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-6">
                 <div class="d-flex justify-content-end">
-                    <a href="<?= get_site_url() . '/pessoas' ?>" class="color-black h4 pt-3 pb-0 mb-0">>>> Saiba mais.</a>
+                    <a href="<?= get_site_url() . '/pessoas' ?>" class="color-black h4 pt-3 pb-0 mb-0 text-see-more">>>> Saiba mais.</a>
                 </div>
             </div>
         </div>

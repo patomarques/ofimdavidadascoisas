@@ -26,6 +26,10 @@
 }
 
 @include media-breakpoint-up(xl) {
+  .footer-logo {
+    display: block;
+    text-align: left;
+  }
 }
 
 @include media-breakpoint-up(xxl) {
