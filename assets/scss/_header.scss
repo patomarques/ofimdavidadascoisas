@@ -42,6 +42,12 @@
   text-decoration: none !important;
 }
 
+#header-image-main-inside,
+#header-page-title,
+.ripple {
+  display: none;
+}
+
 @include media-breakpoint-up(sm) {
   #site-title {
     a {

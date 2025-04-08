@@ -403,6 +403,12 @@ input[name="s"] {
   margin: 0 !important;
 }
 
+.single {
+  #content {
+    //margin-top: 150px;
+  }
+}
+
 @include media-breakpoint-up(xs) {
   .title-section {
     margin-bottom: 30px;

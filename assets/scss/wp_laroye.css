@@ -12122,6 +12122,12 @@ textarea.form-control-lg {
   text-decoration: none !important;
 }
 
+#header-image-main-inside,
+#header-page-title,
+.ripple {
+  display: none;
+}
+
 @media (min-width: 576px) {
   #site-title a {
     font-size: 0.8em !important;
