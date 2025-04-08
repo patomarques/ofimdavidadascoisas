@@ -12028,11 +12028,27 @@ textarea.form-control-lg {
 
 .title-section {
   font-size: 3rem;
+  font-family: "Goldplay", serif !important;
+  font-weight: 300;
+}
+
+.title-content {
+  font-size: 3.4em;
+  margin-bottom: 50px;
+  font-family: "Goldplay", serif !important;
+  margin-top: 50px;
+  font-weight: 300;
 }
 
 @media (min-width: 992px) {
   .title-section {
     font-size: 3.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .title-section {
+    font-size: 4.2rem;
+    margin-bottom: 50px;
   }
 }
 .btn-green {
@@ -12064,7 +12080,7 @@ textarea.form-control-lg {
   font-size: 1.1em;
   color: #000000 !important;
   text-transform: uppercase;
-  font-weight: 900 !important;
+  font-weight: 600 !important;
   padding: 0 24px;
 }
 
@@ -12118,15 +12134,12 @@ nav#mobile-menu #mobile-nav a span {
   color: #ffffff;
 }
 .menu-item-has-children .sub-menu {
-  margin-bottom: 16px;
+  margin-top: 2px;
   text-align: left;
   padding-left: 20%;
 }
-.menu-item-has-children .sub-menu a span {
-  font-size: 1.6em !important;
-}
 .menu-item-has-children .sub-menu li {
-  margin-bottom: 12px !important;
+  margin-bottom: 0px !important;
   margin-left: 30px;
 }
 
@@ -12150,8 +12163,21 @@ nav#mobile-menu #mobile-nav a span {
   #top-nav {
     display: block;
   }
-  .sub-menu a {
+  .sub-menu {
+    margin-top: 20px;
+  }
+  .sub-menu li {
+    margin-bottom: 0 !important;
+  }
+  .sub-menu li a {
     background-color: #ffffff !important;
+  }
+  .sub-menu li a span {
+    font-size: 1.1em !important;
+  }
+  nav#mobile-menu #mobile-nav a {
+    font-size: 1.6em;
+    font-family: "Goldplay", serif !important;
   }
 }
 body {
@@ -12167,7 +12193,10 @@ a:hover {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.8em;
+  font-weight: 300;
+  font-family: "Goldplay", serif !important;
+  color: #000000 !important;
 }
 
 .bold {
@@ -12186,12 +12215,22 @@ p {
 .equipe__card .equipe__content {
   position: relative;
   color: #000000 !important;
+  max-height: 100%;
+  height: 500px;
+  position: relative;
+}
+.equipe__card .equipe__content__image {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
 }
 .equipe__card .equipe__content__name {
   color: #000000 !important;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin: 0;
-  font-weight: 700;
+  font-weight: 300;
 }
 .equipe__card .equipe__content__desc p {
   color: #000000 !important;
@@ -12396,6 +12435,34 @@ input[name=s] {
   margin-left: 30px;
 }
 
+.page-content {
+  padding-top: 80px;
+}
+.page-content .title-section {
+  margin-bottom: 30px;
+}
+
+.slick-js .fa-solid {
+  color: #fffbed;
+}
+.slick-js .fa-chevron-left {
+  left: 25px !important;
+}
+.slick-js .fa-chevron-right {
+  right: 25px !important;
+}
+
+.modal-cv {
+  font-family: "Goldplay", serif !important;
+}
+.modal-cv p {
+  font-size: 1.3em;
+  font-weight: 100;
+  line-height: 1.5em;
+  font-family: "Goldplay", serif !important;
+  text-align: justify;
+}
+
 .title-section {
   margin-bottom: 30px;
 }
@@ -12425,6 +12492,11 @@ input[name=s] {
     font-size: 2em;
   }
 }
+@media (min-width: 1200px) {
+  .modal-cv p {
+    padding-left: 30px;
+  }
+}
 #site-copyright,
 .footer-inside {
   color: #000000;
@@ -12445,5 +12517,6 @@ input[name=s] {
   .footer-logo {
     display: block;
     text-align: left;
+    margin: inherit;
   }
 }/*# sourceMappingURL=wp_laroye.css.map */

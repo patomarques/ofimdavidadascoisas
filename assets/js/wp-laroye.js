@@ -3,13 +3,49 @@ jQuery(document).ready(function ($) {
   //console.log("jQuery is still working!", $);
 
   $(".slick-js").slick({
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    adaptiveHeight: true,
-    autoplay: true,
+    adaptiveHeight: false,
+    autoplay: false,
     centerMode: false,
+    arrows: true,
+    prevArrow: '<i class="fa-solid fa-chevron-left fa-4x"></i>',
+    nextArrow: '<i class="fa-solid fa-chevron-right fa-4x"></i>',
+    responsive: [
+      {
+        breakpoint: 3500,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 1800,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $(".slick-people").slick({
@@ -68,13 +104,5 @@ jQuery(document).ready(function ($) {
 
   $(window).on("orientationchange", function () {
     $(".js-slider").not(".slick-initialized").slick("resize");
-  });
-
-  $('#mobile-menu .menu-item-has-children a').on('click', function(){
-    if($(this).closest('li').hasClass('menu-item-has-children')){
-      $(this).attr('href', '#');
-      $(this).parent('li').find('.dropdown-toggle').click();
-      return;
-    }
   });
 });

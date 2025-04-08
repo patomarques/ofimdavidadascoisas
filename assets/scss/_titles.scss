@@ -1,9 +1,26 @@
 .title-section {
-    font-size: 3rem;
+  font-size: 3rem;
+  font-family: $ff-goldplay;
+  font-weight: 300;
+}
+
+.title-content {
+  font-size: 3.4em;
+  margin-bottom: 50px;
+  font-family: $ff-goldplay;
+  margin-top: 50px;
+  font-weight: 300;
 }
 
 @include media-breakpoint-up(lg) {
-    .title-section {
-        font-size: 3.5rem;
-    }
+  .title-section {
+    font-size: 3.5rem;
   }
+}
+
+@include media-breakpoint-up(xl) {
+  .title-section {
+    font-size: 4.2rem;
+    margin-bottom: 50px;
+  }
+}
