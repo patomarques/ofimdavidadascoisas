@@ -12,6 +12,32 @@
   font-weight: 300;
 }
 
+.entry-title {
+  font-size: 3em !important;
+  font-family: $ff-goldplay;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#header-page-title {
+  justify-content: inherit;
+  height: auto;
+
+  #header-page-title-inside {
+    padding: 0 !important;
+    margin-top: 130px;
+  }
+}
+
+
+.byline, 
+.entry-meta {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+
 @include media-breakpoint-up(lg) {
   .title-section {
     font-size: 3.5rem;

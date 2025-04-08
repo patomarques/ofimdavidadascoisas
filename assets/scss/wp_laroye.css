@@ -12040,6 +12040,29 @@ textarea.form-control-lg {
   font-weight: 300;
 }
 
+.entry-title {
+  font-size: 3em !important;
+  font-family: "Goldplay", serif !important;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#header-page-title {
+  justify-content: inherit;
+  height: auto;
+}
+#header-page-title #header-page-title-inside {
+  padding: 0 !important;
+  margin-top: 130px;
+}
+
+.byline,
+.entry-meta {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 @media (min-width: 992px) {
   .title-section {
     font-size: 3.5rem;
@@ -12461,6 +12484,11 @@ input[name=s] {
   line-height: 1.5em;
   font-family: "Goldplay", serif !important;
   text-align: justify;
+}
+
+.fa-paper-plane {
+  top: -4px;
+  position: relative;
 }
 
 .title-section {

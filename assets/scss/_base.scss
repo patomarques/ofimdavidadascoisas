@@ -392,6 +392,11 @@ input[name="s"] {
   }
 }
 
+.fa-paper-plane {
+  top: -4px;
+  position: relative;
+}
+
 @include media-breakpoint-up(xs) {
   .title-section {
     margin-bottom: 30px;
