@@ -30,12 +30,19 @@
   }
 }
 
+#site-title {
+  span {
+    a {
+      text-decoration: underline;
+      font-family: $ff-goldplay;
 
-.byline, 
-.entry-meta {
-  padding: 0 !important;
-  margin: 0 !important;
+      &:before {
+        width: 0;
+      }
+    }
+  }
 }
+
 
 
 @include media-breakpoint-up(lg) {

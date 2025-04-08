@@ -1,16 +1,10 @@
-#site-title {
-  span {
-    a {
-      text-decoration: underline;
-      font-family: $ff-goldplay;
-
-      &:before {
-        width: 0;
-      }
+.menu-burger {
+  .hamburger {
+    span {
+      background-color: $color-black !important;
     }
   }
 }
-
 #access {
   float: right !important;
 }

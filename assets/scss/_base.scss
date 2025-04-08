@@ -397,6 +397,12 @@ input[name="s"] {
   position: relative;
 }
 
+.byline,
+.entry-meta {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 @include media-breakpoint-up(xs) {
   .title-section {
     margin-bottom: 30px;
