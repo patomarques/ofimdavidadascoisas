@@ -1,5 +1,4 @@
 .title-section {
-  font-size: 3rem;
   font-family: $ff-goldplay;
   font-weight: 300;
 }
@@ -43,6 +42,18 @@
   }
 }
 
+
+@include media-breakpoint-up(xs) {
+  .title-section {
+    font-size: 2rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .title-section {
+    font-size: 3rem;
+  }
+}
 
 
 @include media-breakpoint-up(lg) {

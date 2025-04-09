@@ -31,10 +31,10 @@ $objects = new WP_Query(
 <section class="container-fluid bg-red pt-5 pb-5">
     <div class="container">
         <div class="row mb-3">
-            <div class="col-12 col-md-4 col-lg-6">
+            <div class="col-12 col-sm-3">
                 <h2 class="title-section bold">Acervo</h2>
             </div>
-            <div class="col-12 col-md-8 col-lg-6">
+            <div class="col-12 col-sm-9">
 
                 <ul class="nav justify-content-end nav-acervo">
                     <li class="nav-item nav-acervo__item">
@@ -45,7 +45,7 @@ $objects = new WP_Query(
 
                     </li>
                     <li class="nav-item">
-                        <a href="<?= get_site_url() . '/acervo/lugares' ?>" class="nav-acervo__item__link">Lugares</a>
+                        <a href="<?= get_site_url() . '/lugares' ?>" class="nav-acervo__item__link">Lugares</a>
 
                     </li>
                 </ul>

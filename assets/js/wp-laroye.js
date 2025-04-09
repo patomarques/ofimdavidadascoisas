@@ -92,7 +92,7 @@ jQuery(document).ready(function ($) {
   $(".multiple-items").slick({
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     prevArrow: '<i class="fa-solid fa-chevron-left fa-4x"></i>',
     nextArrow: '<i class="fa-solid fa-chevron-right fa-4x"></i>',
     variableWidth: true,

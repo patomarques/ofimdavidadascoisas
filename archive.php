@@ -18,7 +18,7 @@ get_header(); ?>
 
 	<div id="container" class="<?php bravada_get_layout_class(); ?>">
 		<main id="main" class="main">
-			<?php cryout_before_content_hook(); ?>
+			<?php cryout_before_content_hook();  ?>
 
 			<h2 class="title-page display-1 text-center mt-1 mb-5 pb-5"><?php echo wp_title(''); ?></h2>
 			
@@ -38,19 +38,22 @@ get_header(); ?>
 					?>
 				</header><!-- .page-header -->
 
+				<?php if(get_post_type() == 'lugares') { 	
+						get_template_part('template_parts/lugares-mapa'); 
+					}else { 
+				?>
+
 				<div id="content-masonry" class="content-masonry" <?php cryout_schema_microdata( 'blog' ); ?>>
 					<?php
 					while ( have_posts() ) : the_post();
-					/*
-					 * Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content/content', get_post_format() );
+						 get_template_part( 'content/content', get_post_format() );
 					endwhile;
 					?>
-				</div><!--content-masonry-->
-				<?php bravada_pagination();
+				</div>
+
+				<?php } ?>
+
+				<?php //bravada_pagination();
 
 			// If no content, include the "No posts found" template.
 			else :

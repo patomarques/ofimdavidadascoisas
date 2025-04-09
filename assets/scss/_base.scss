@@ -13,6 +13,7 @@ html {
 a {
   color: $c-blue;
   text-decoration: none !important;
+  font-family: $ff-goldplay;
 
   &:hover {
     opacity: 0.6;
@@ -412,6 +413,7 @@ input[name="s"] {
 .post-type-archive {
   .entry-title {
     line-height: .7 !important;
+
     a { 
       font-size: .6em !important;
 
@@ -439,10 +441,24 @@ input[name="s"] {
   .nav-acervo {
     padding-top: 16px;
   }
+
+  .nav-acervo {
+    padding-top: 0;
+  }
+
+  .nav-acervo__item__link {
+    font-size: 1.2em;
+    margin-left: 10px;
+  }
 }
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(sm) {
+  .nav-acervo {
+    padding-top: 18px;
+  }
 }
+
 @include media-breakpoint-up(md) {
+ 
 }
 @include media-breakpoint-up(lg) {
   .map-places {
@@ -452,8 +468,16 @@ input[name="s"] {
       justify-content: center;
     }
   }
+ 
   .nav-acervo {
-    padding-top: 26px;
+    padding-top: 22px;
+
+    &__item {
+      &__link {
+        margin-left: 30px;
+        font-size: 1.4em;
+      }
+    }
   }
 
   .text-see-more {
@@ -464,6 +488,16 @@ input[name="s"] {
   .modal-cv {
     p {
       padding-left: 30px;
+    }
+  }
+
+  .nav-acervo {
+    padding-top: 16px;
+
+    &__item {
+      &__link {
+        font-size: 2em;
+      }
     }
   }
 }

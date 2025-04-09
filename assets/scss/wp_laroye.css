@@ -12027,7 +12027,6 @@ textarea.form-control-lg {
 }
 
 .title-section {
-  font-size: 3rem;
   font-family: "Goldplay", serif !important;
   font-weight: 300;
 }
@@ -12065,6 +12064,15 @@ textarea.form-control-lg {
   width: 0;
 }
 
+.title-section {
+  font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+  .title-section {
+    font-size: 3rem;
+  }
+}
 @media (min-width: 992px) {
   .title-section {
     font-size: 3.5rem;
@@ -12162,28 +12170,39 @@ nav#mobile-menu #mobile-nav a span {
 }
 .menu-item-has-children .sub-menu {
   margin-top: 2px;
-  text-align: left;
-  padding-left: 20%;
+  text-align: center;
+  padding-left: 0;
 }
 .menu-item-has-children .sub-menu li {
-  margin-bottom: 0px !important;
+  margin-bottom: 10px !important;
   margin-left: 30px;
 }
 
 .burgermenu-active .dropdown-toggle:after {
   content: "" !important;
-  font-size: 2em;
-  margin: 16px 40px;
+  font-size: 1.5em;
+  margin: 16px 10px;
+}
+.burgermenu-active .dropdown-toggle.toggle-on:after {
+  margin: 5px 10px;
 }
 
 .searchform {
   display: none !important;
 }
 
+nav#mobile-menu #mobile-nav a {
+  font-size: 1.2em;
+}
+
 @media (min-width: 576px) {
   nav#mobile-menu #mobile-nav a {
     font-size: 1.4em;
-    font-family: "Goldplay", serif !important;
+  }
+}
+@media (min-width: 992px) {
+  .menu-item-has-children .sub-menu li {
+    margin-bottom: 0 !important;
   }
 }
 @media (min-width: 1200px) {
@@ -12214,6 +12233,7 @@ body {
 a {
   color: rgb(199, 226, 191);
   text-decoration: none !important;
+  font-family: "Goldplay", serif !important;
 }
 a:hover {
   opacity: 0.6;
@@ -12524,6 +12544,20 @@ input[name=s] {
   padding-top: 16px;
 }
 
+.nav-acervo {
+  padding-top: 0;
+}
+
+.nav-acervo__item__link {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+
+@media (min-width: 576px) {
+  .nav-acervo {
+    padding-top: 18px;
+  }
+}
 @media (min-width: 992px) {
   .map-places__buttons {
     display: flex !important;
@@ -12531,7 +12565,11 @@ input[name=s] {
     justify-content: center;
   }
   .nav-acervo {
-    padding-top: 26px;
+    padding-top: 22px;
+  }
+  .nav-acervo__item__link {
+    margin-left: 30px;
+    font-size: 1.4em;
   }
   .text-see-more {
     font-size: 2em;
@@ -12540,6 +12578,12 @@ input[name=s] {
 @media (min-width: 1200px) {
   .modal-cv p {
     padding-left: 30px;
+  }
+  .nav-acervo {
+    padding-top: 16px;
+  }
+  .nav-acervo__item__link {
+    font-size: 2em;
   }
 }
 #site-copyright,

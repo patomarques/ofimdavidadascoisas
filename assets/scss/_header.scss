@@ -89,20 +89,11 @@ nav#mobile-menu #mobile-nav {
 
   .sub-menu {
     margin-top: 2px;
-    text-align: left;
-    padding-left: 20%;
-
-    // a {
-    //   font-size: 1em !important;
-
-    //   span {
-    //     padding: 5px 35px;
-    //     font-size: 1.2em !important;
-    //   }
-    // }
+    text-align: center;
+    padding-left: 0;
 
     li {
-      margin-bottom: 0px !important;
+      margin-bottom: 10px !important;
       margin-left: 30px;
     }
   }
@@ -112,8 +103,14 @@ nav#mobile-menu #mobile-nav {
   .dropdown-toggle {
     &:after {
       content: "" !important;
-      font-size: 2em;
-      margin: 16px 40px;
+      font-size: 1.5em;
+      margin: 16px 10px;
+    }
+
+    &.toggle-on {
+      &:after {
+        margin: 5px 10px;
+      }
     }
   }
 }
@@ -122,10 +119,19 @@ nav#mobile-menu #mobile-nav {
   display: none !important;
 }
 
+@include media-breakpoint-up(xs) {
+  #mobile-menu {
+    .dropdown-toggle {
+    }
+  }
+  nav#mobile-menu #mobile-nav a {
+    font-size: 1.2em;
+  }
+}
+
 @include media-breakpoint-up(sm) {
   nav#mobile-menu #mobile-nav a {
     font-size: 1.4em;
-    font-family: $ff-goldplay;
   }
 }
 
@@ -133,6 +139,13 @@ nav#mobile-menu #mobile-nav {
 }
 
 @include media-breakpoint-up(lg) {
+  .menu-item-has-children {
+    .sub-menu {
+      li {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(xl) {

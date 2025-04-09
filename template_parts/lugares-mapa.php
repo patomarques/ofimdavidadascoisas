@@ -1,11 +1,11 @@
 <?php
-$places = new WP_Query(
-    array(
-        'post_type' => 'lugares',
-        'orderby' => 'publish',
-        'order' => 'DESC',
-    )
-);
+    $places = new WP_Query(
+        array(
+            'post_type' => 'lugares',
+            'orderby' => 'publish',
+            'order' => 'DESC',
+        )
+    );
 ?>
 
 <div class="container">
@@ -15,10 +15,10 @@ $places = new WP_Query(
         </div>
     </div>
     <div class="row pt-5">
-        <div class="col-12 col-lg-3 <?= (is_front_page()?'':'d-none') ?>">
+        <div class="col-12 col-xl-3 <?= (is_front_page()?'':'d-none') ?>">
             <h2 class="title-section bold">Lugares</h2>
         </div>
-        <div class="col-12 <?= (is_front_page()?'col-lg-9 pt-4':'') ?>">
+        <div class="col-12 <?= (is_front_page()?'col-xl-9 pt-4':'') ?>">
             <div class="d-flex justify-content-end pt-2">
                 <div class="d-grid gap-2 w100vw map-places__buttons">
 
