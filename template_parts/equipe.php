@@ -43,9 +43,12 @@ $equipe = new WP_Query($args);
 
                         <div class="d-flex text-center ">
                             <div class="m-auto">
-                                <a href="<?= get_post_custom_values('instagram')[0] ?>" alt="Instagram" title="Instagram" target="_blank" class="m-3 mt-0">
-                                    <i class="fab fa-instagram fa-2x"></i>
-                                </a>
+                                <?php if (isset(get_post_custom_values('instagram')[0])) { ?>
+                                    <a href="<?= get_post_custom_values('instagram')[0] ?>" alt="Instagram" title="Instagram" target="_blank" class="m-3 mt-0">
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                    </a>
+                                <?php } ?>
+
 
                                 <?php if (isset(get_post_custom_values('portfolio')[0])) { ?>
                                     <a href="<?= get_post_custom_values('portfolio')[0] ?>" title="Site / Portfólio" alt="Site / Portfólio" class="m-3 mt-0" target="_blank">
@@ -83,7 +86,7 @@ $equipe = new WP_Query($args);
                                 <div class="m-auto">
                                     <?php if (!empty(get_post_custom_values('instagram')[0])) { ?>
                                         <a href="<?= get_post_custom_values('instagram')[0] ?>" alt="Instagram" title="Instagram" target="_blank" class="mx-4">
-                                            <i class="fab fa-instagram display-4 color-black"></i>
+                                            <i class="fab fa-instagram display-5 color-black"></i>
                                         </a>
                                     <?php } ?>
 

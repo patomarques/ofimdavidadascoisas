@@ -409,6 +409,16 @@ input[name="s"] {
   }
 }
 
+.post-type-archive {
+  .entry-title {
+    line-height: .7 !important;
+    a { 
+      font-size: .6em !important;
+
+    }
+  }
+}
+
 @include media-breakpoint-up(xs) {
   .title-section {
     margin-bottom: 30px;

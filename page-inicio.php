@@ -45,7 +45,7 @@ $objects = new WP_Query(
 
                     </li>
                     <li class="nav-item">
-                        <a href="<?= get_site_url() . '/lugares' ?>" class="nav-acervo__item__link">Lugares</a>
+                        <a href="<?= get_site_url() . '/acervo/lugares' ?>" class="nav-acervo__item__link">Lugares</a>
 
                     </li>
                 </ul>

@@ -12501,6 +12501,13 @@ input[name=s] {
   margin: 0 !important;
 }
 
+.post-type-archive .entry-title {
+  line-height: 0.7 !important;
+}
+.post-type-archive .entry-title a {
+  font-size: 0.6em !important;
+}
+
 .title-section {
   margin-bottom: 30px;
 }
